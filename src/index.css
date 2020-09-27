@@ -146,7 +146,6 @@ img{
 p.about-text {
   font-family: 'Old Standard TT', serif;
   text-align: justify;
-  margin-left: 16px;
   font-size: 18px;
   margin-right: 16px;
   line-height: 30px;
@@ -229,12 +228,15 @@ li > a {
     li > a {
       font-size: 16px;
     }
+    .aboutpic > img{
+      width: 330px;
+    }
   }
 
 @media screen and (max-width: 750px) {
   .gallery{
-    grid-template-columns: repeat(3, 1fr); 
-    grid-template-rows: repeat(3, 14vh);
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr;
     padding: 0.25em;
     grid-row-gap: 4px;
     grid-column-gap: 4px;
@@ -245,9 +247,6 @@ li > a {
   h3{
     font-size: 3.5vw;
     margin-left: unset;
-  }
-  top{
-    display: inline;
   }
   .regular-nav{
     display: none;
@@ -292,5 +291,12 @@ li > a {
   }
   top{
     margin: 0 12px 0 12px;
+    display: inline;
+  }
+  .pic-6{
+    grid-column: unset;
+  }
+  .pic-5{
+    grid-row: unset;
   }
 }
