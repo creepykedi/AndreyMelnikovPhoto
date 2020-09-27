@@ -162,7 +162,7 @@ p.about-text {
 }
 .pic :hover{
   cursor: pointer;
-  opacity: 70%;;
+  opacity: 70%;
 }
 .sidebar-off{
   display: none;
