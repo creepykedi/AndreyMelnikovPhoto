@@ -7,7 +7,7 @@ function Navigation(props) {
       <div> 
         <nav className="regular-nav">
           <ul>
-              <li><Link to={'/'} >OVERVIEW</Link>
+              <li><Link to={'/'}>OVERVIEW</Link>
                 </li>
               <li> <Link to={'/portraits'} >ПОРТРЕТЫ</Link></li>
               <li><Link to={'/landscapes'} >ПЕЙЗАЖИ</Link></li>
@@ -25,7 +25,7 @@ function Navigation(props) {
         <ul className="sidebar">{SidebarData.map((item, index) => {
           return (
             <li>
-                <Link to={item.path} id={item.id}>{item.title}</Link>
+                <Link onClick={props.showSidebar} to={item.path} id={item.id}>{item.title}</Link>
             </li>)
           })}
         </ul>

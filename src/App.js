@@ -48,7 +48,8 @@ function App() {
 
       <main> 
     
-        <Navigation sidebar={sidebar}/>
+        <Navigation sidebar={sidebar}
+        showSidebar={showSidebar}/>
         <Route path="/" exact>
           <Gallery 
           animationPlayed={animationPlayed}

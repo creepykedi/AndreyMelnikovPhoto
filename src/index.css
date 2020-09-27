@@ -14,7 +14,6 @@ svg {
   fill: #4b4747;
   cursor: pointer;
 }
-
 .mobile-inst{
   display: none;
 }
@@ -177,6 +176,7 @@ p.about-text {
 }
 ul.sidebar{
   padding: 2em;
+  padding-left: 0;
 }
 .mobname{
   display: none;
@@ -298,9 +298,15 @@ li > a {
   .pic-5{
     grid-row: unset;
   }
+  h3{
+    font-size: 1.6rem;
+  }
 }
 @media screen and (max-width: 450px) {
   #mypic  { 
     margin-bottom: 1em;
+  }
+  h3{
+    font-size: 1.6rem;
   }
 }
