@@ -233,7 +233,7 @@ li > a {
     }
   }
 
-@media screen and (max-width: 750px) {
+  @media screen and (max-width: 750px) {
   .gallery{
     grid-template-columns: 1fr 1fr; 
     grid-template-rows: 1fr;
@@ -259,8 +259,7 @@ li > a {
     margin-left: 2em;
     width: 30px;
     height: 30px;
-    margin: 10px 0 0 10px;
-    
+    margin: 0 0 0 10px;
   }
   svg{
     width: 30px;
@@ -298,5 +297,10 @@ li > a {
   }
   .pic-5{
     grid-row: unset;
+  }
+}
+@media screen and (max-width: 450px) {
+  #mypic  { 
+    margin-bottom: 1em;
   }
 }
