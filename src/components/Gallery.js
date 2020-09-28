@@ -1,6 +1,5 @@
 import React, { useRef, useEffect } from 'react';
 import {  Power3, TimelineLite } from 'gsap'
-
 function Gallery(props) {
 
 let images = useRef(null)
@@ -23,6 +22,7 @@ let tl = new TimelineLite()
   
 return(     
     <div className="gallery">
+
         <div className="pic">
             <img src="https://moodboardbucket.s3.amazonaws.com/static/moodboard/images/0vszwr6sivs01.jpg"/>
         </div>
@@ -35,10 +35,10 @@ return(
         </div>
 
         <div className="pic" >
-                <img src="https://preview.redd.it/gcoakop7j5o51.jpg?width=960&crop=smart&auto=webp&s=8f82c5587ba4100ec666fb45f02fb44d292b3e0b"></img>
+            <img src="https://preview.redd.it/gcoakop7j5o51.jpg?width=960&crop=smart&auto=webp&s=8f82c5587ba4100ec666fb45f02fb44d292b3e0b"></img>
         </div>
         <div className="pic" >
-                <img src="https://preview.redd.it/6q1eh8gsltn51.jpg?width=640&crop=smart&auto=webp&s=9b0fe3975cb660b126c8b405be2722660f810696"></img>
+            <img src="https://preview.redd.it/6q1eh8gsltn51.jpg?width=640&crop=smart&auto=webp&s=9b0fe3975cb660b126c8b405be2722660f810696"></img>
         </div>
 
         <div className="pic pic-5" ref={el => images = el}>

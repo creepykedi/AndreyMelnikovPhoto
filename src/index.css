@@ -46,7 +46,7 @@ main {
 .gallery{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(18vw, 1fr));
-  grid-template-rows: repeat(3, 40vh);
+  grid-template-rows: repeat(3, 14vh);
   grid-row-gap: 0.9em;
   grid-column-gap: 0.9em;
   padding: 1em;
@@ -193,7 +193,7 @@ ul.sidebar{
   .gallery{
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
-    grid-template-rows: repeat(3, 30vh);
+    grid-template-rows: repeat(3, 50vh);
 } 
     nav{
       position: fixed;
@@ -207,7 +207,7 @@ li > a {
   .gallery{
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
-    grid-template-rows: repeat(3, 20vh);
+    grid-template-rows: repeat(3, 40vh);
     padding: 0.25em;
     grid-row-gap: 6px;
     grid-column-gap: 6px;
@@ -303,6 +303,9 @@ li > a {
   #mypic  { 
     margin-bottom: 1em;
   }
+  .aboutpic > img {
+    width: 240px;
+}
   h3{
     font-size: 14px
   }

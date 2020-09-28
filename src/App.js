@@ -47,7 +47,6 @@ function App() {
       </div>
 
       <main> 
-    
         <Navigation sidebar={sidebar}
         showSidebar={showSidebar}/>
         <Route path="/" exact>
