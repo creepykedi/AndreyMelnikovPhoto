@@ -1,0 +1,10 @@
+
+
+
+                {pictures.map((item, index) => { 
+          return ( 
+            <div className={item.classname} ref={item.ref}>
+                <img src={item.url}></img>
+          </div>)
+        })
+    }
