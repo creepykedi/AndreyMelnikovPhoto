@@ -137,7 +137,7 @@ img{
 }
 .aboutpic > img{
   width: 500px;
-  padding-right: 25px;
+  padding-right: 3.5vw;
 }
 .aboutpic {
   margin-right: 16px;
@@ -149,6 +149,7 @@ p.about-text {
   margin-right: 16px;
   line-height: 30px;
   word-spacing: 4px;
+  max-width: 900px;
 }
 
 #about-title{
@@ -245,7 +246,6 @@ li > a {
     display: inline;
   }
   h3{
-    font-size: 3.5vw;
     margin-left: unset;
   }
   .regular-nav{
@@ -298,15 +298,12 @@ li > a {
   .pic-5{
     grid-row: unset;
   }
-  h3{
-    font-size: 1.6rem;
-  }
 }
 @media screen and (max-width: 450px) {
   #mypic  { 
     margin-bottom: 1em;
   }
   h3{
-    font-size: 1.6rem;
+    font-size: 14px
   }
 }

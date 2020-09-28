@@ -2,7 +2,7 @@ import React, { useRef, useState, useEffect } from 'react';
 import './App.css';
 import Gallery from './components/Gallery';
 import Navigation from './components/Navigation'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route, BrowserRouter } from 'react-router-dom'
 import gsap, {Power1} from 'gsap'
 import About from './components/About'
 
@@ -25,6 +25,7 @@ function App() {
     }
   }, [nameShown])
   return (
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
     <Router> 
     <div className="App">
       <top>
@@ -63,6 +64,7 @@ function App() {
       </main>
     </div>
     </Router>
+    </BrowserRouter>
   );
 }
 
