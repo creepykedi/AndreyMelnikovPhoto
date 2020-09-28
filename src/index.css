@@ -189,7 +189,7 @@ ul.sidebar{
     grid-template-rows: repeat(3, 40vh);
 } }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1400px)  and (max-height: 900){
   .gallery{
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
@@ -233,7 +233,11 @@ li > a {
       width: 330px;
     }
   }
-
+  @media screen and (aspect-ratio: 1280/800 ){
+    .gallery{
+      grid-template-rows: repeat(3, 35vh);
+    }
+  }
   @media screen and (max-width: 750px) {
   .gallery{
     grid-template-columns: 1fr 1fr; 
