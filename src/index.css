@@ -207,7 +207,7 @@ li > a {
   .gallery{
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
-    grid-template-rows: repeat(3, 40vh);
+    grid-template-rows: repeat(3, 22vh);
     padding: 0.25em;
     grid-row-gap: 6px;
     grid-column-gap: 6px;
