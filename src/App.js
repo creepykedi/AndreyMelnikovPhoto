@@ -55,7 +55,7 @@ function App() {
           toggleAnimation={toggleAnimation}/>
         </Route>
         <Route path="/about" component={About} />
-      
+    
         <footer>
           <p className="copyright"> All Images © Andrey Melnikov 2020</p>
         </footer>
