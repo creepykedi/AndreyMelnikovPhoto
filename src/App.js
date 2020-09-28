@@ -5,7 +5,7 @@ import Navigation from './components/Navigation'
 import { BrowserRouter as Router, Switch, Route, BrowserRouter } from 'react-router-dom'
 import gsap, {Power1} from 'gsap'
 import About from './components/About'
-
+import SimpleReactLightbox from "simple-react-lightbox";
 function App() {
 
   const [sidebar, setSidebar] = useState(false)
@@ -26,6 +26,7 @@ function App() {
   }, [nameShown])
   return (
     <Router basename={process.env.PUBLIC_URL}> 
+    <SimpleReactLightbox>
     <div className="App">
       <top>
           <div className="top-icons"> 
@@ -61,6 +62,7 @@ function App() {
         </footer>
       </main>
     </div>
+    </SimpleReactLightbox>
     </Router>
   );
 }

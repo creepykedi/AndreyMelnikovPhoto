@@ -1,5 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import {  Power3, TimelineLite } from 'gsap'
+import { SRLWrapper } from 'simple-react-lightbox'
+
 function Gallery(props) {
 
 let images = useRef(null)
@@ -21,6 +23,7 @@ let tl = new TimelineLite()
 }, [props.animationPlayed])
   
 return(     
+    <SRLWrapper>
     <div className="gallery">
 
         <div className="pic">
@@ -54,7 +57,7 @@ return(
         </div>
 
     </div>
-    
+    </SRLWrapper>
 )
 }
 
