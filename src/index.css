@@ -46,7 +46,7 @@ main {
 .gallery{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(18vw, 1fr));
-  grid-template-rows: repeat(3, 14vh);
+  grid-template-rows: repeat(3, 35vh);
   grid-row-gap: 0.9em;
   grid-column-gap: 0.9em;
   padding: 1em;
