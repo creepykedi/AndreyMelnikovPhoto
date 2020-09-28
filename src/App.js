@@ -25,8 +25,7 @@ function App() {
     }
   }, [nameShown])
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
-    <Router> 
+    <Router basename={process.env.PUBLIC_URL}> 
     <div className="App">
       <top>
           <div className="top-icons"> 
@@ -64,7 +63,6 @@ function App() {
       </main>
     </div>
     </Router>
-    </BrowserRouter>
   );
 }
 
