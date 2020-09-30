@@ -185,12 +185,25 @@ ul.sidebar{
 .mobname{
   display: none;
 }
+@-moz-document url-prefix() {
+  .firefix > a{
+    display: inline-block;
+}}
+
+@media screen and (min-width: 1600px) {
+  p.about-text {
+    max-width: 1400px;
+    font-size: 22px;
+  }
+}
 @media screen and (max-width: 1900px) {
   .gallery{
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
     grid-template-rows: repeat(3, 40vh);
-} }
+} 
+
+}
 
 @media screen and (max-width: 1400px)  and (max-height: 900){
   .gallery{
@@ -206,7 +219,7 @@ li > a {
   font-size: 18px;
 }}
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1024px) {
   .gallery{
     display: grid;
     grid-template-columns: repeat(3, 1fr); 

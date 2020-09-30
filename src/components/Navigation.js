@@ -8,11 +8,12 @@ function Navigation(props) {
       <div> 
         <nav className="regular-nav">
           <ul>
-              <li><Link to={'/'}>OVERVIEW</Link>
+              <li><Link to={'/'}>ОБЗОР</Link>
                 </li>
-              <li> <Link to={'/portraits'} >ПОРТРЕТЫ</Link></li>
-              <li><Link to={'/landscapes'} >ПЕЙЗАЖИ</Link></li>
-              <li><Link to={'/about'} >ОБО МНЕ</Link></li>
+              <li> <Link to={'/nature'} >ПРИРОДА</Link></li>
+              <li><Link to={'/landscapes'} >РЕПОРТАЖИ</Link></li>
+              <li><Link to={'/architecture'} >АРХИТЕКТУРА</Link></li>
+              <li class="firefix"><Link to={'/about'} >ОБО МНЕ</Link></li>
               <li><Link to={'/contact'} >СВЯЗАТЬСЯ</Link></li>
           </ul>
     
