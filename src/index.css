@@ -159,6 +159,9 @@ p.about-text {
 #mypic{
   float: left;
 }
+.pic{
+  display: flex;
+}
 .pic :hover{
   cursor: pointer;
   opacity: 0.7;
