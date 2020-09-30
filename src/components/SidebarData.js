@@ -1,15 +1,19 @@
 const SidebarData = [
     {
-      title: 'OVERVIEW',
+      title: 'ОБЗОР',
       path: '/'
     },
     {
-      title: 'ПОРТРЕТЫ',
-      path: '/portraits'
+      title: 'ПРИРОДА',
+      path: '/nature'
     },
     {
-      title: 'ПЕЙЗАЖИ',
-      path: '/landscapes'
+      title: 'РЕПОРТАЖИ',
+      path: '/reportage'
+    },
+    {
+      title: 'АРХИТЕКТУРА',
+      path: '/architecture'
     },
     {
       title: 'ОБО МНЕ',
