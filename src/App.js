@@ -7,6 +7,7 @@ import {browserHistory} from 'react-router'
 import gsap, {Power1} from 'gsap'
 import About from './components/About'
 import SimpleReactLightbox from "simple-react-lightbox";
+import Architecture from './components/Architecture';
 function App() {
 
   const [sidebar, setSidebar] = useState(false)
@@ -51,11 +52,13 @@ function App() {
       <main> 
         <Navigation sidebar={sidebar}
         showSidebar={showSidebar}/>
+
         <Route path="/" exact>
           <Gallery 
           animationPlayed={animationPlayed}
           toggleAnimation={toggleAnimation}/>
         </Route>
+        <Route path="/architecture" exact component={Architecture} />
         <Route path="/about" exact component={About} />
     
         <footer>
