@@ -3,7 +3,6 @@ import './App.css';
 import Gallery from './components/Gallery';
 import Navigation from './components/Navigation'
 import { BrowserRouter as Router, HashRouter, Route } from 'react-router-dom'
-import {browserHistory} from 'react-router'
 import gsap, {Power1} from 'gsap'
 import About from './components/About'
 import SimpleReactLightbox from "simple-react-lightbox";

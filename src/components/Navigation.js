@@ -13,7 +13,7 @@ function Navigation(props) {
               <li> <Link to={'/nature'} >ПРИРОДА</Link></li>
               <li><Link to={'/reportage'} >РЕПОРТАЖИ</Link></li>
               <li><Link to={'/architecture'} >АРХИТЕКТУРА</Link></li>
-              <li class="firefix"><Link to={'/about'} >ОБО МНЕ</Link></li>
+              <li className="firefix"><Link to={'/about'}>ОБО МНЕ</Link></li>
               <li><Link to={'/contact'} >СВЯЗАТЬСЯ</Link></li>
           </ul>
     
