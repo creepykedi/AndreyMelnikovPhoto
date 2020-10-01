@@ -136,7 +136,7 @@ img{
   height: 100%;
 }
 .aboutpic > img{
-  width: 500px;
+  width: 31em;
   padding-right: 3.5vw;
 }
 .aboutpic {
@@ -246,7 +246,7 @@ li > a {
       font-size: 16px;
     }
     .aboutpic > img{
-      width: 330px;
+      width: 21em;
     }
   }
   @media screen and (aspect-ratio: 1280/800 ){
@@ -287,7 +287,7 @@ li > a {
   }
 
   .aboutpic > img{
-    width: 320px;
+    width: 21em;
   }
   p.about-text {
     line-height: 26px;

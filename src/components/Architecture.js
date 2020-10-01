@@ -17,7 +17,7 @@ return(
         </div>
         
     </div>
-    <div className="about"> 
+    <div className="abt"> 
             <div className="aboutpic">
                 
         <img id="mypic"
