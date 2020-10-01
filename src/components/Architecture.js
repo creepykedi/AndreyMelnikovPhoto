@@ -17,7 +17,7 @@ return(
         </div>
         
     </div>
-    <div className="abt"> 
+   
             <div className="aboutpic">
                 
         <img id="mypic"
@@ -28,9 +28,9 @@ return(
             https://andreyphotos.s3.eu-north-1.amazonaws.com/about+photo/IMG_7448!.jpg 1200w"
             sizes="(min-width: 1600px) 1200px,
             (max-width: 1200px) and (min-width: 600px) 600px,
-            (max-width: 470px) 300px, "></img>
+            (max-width: 470px) 300px, "/>
             
-            </div>
+           
     </div>
     </div>
 )}
