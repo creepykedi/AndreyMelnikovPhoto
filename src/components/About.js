@@ -6,7 +6,7 @@ function About() {
             
             <div className="aboutpic">
                 <h3 id="about-title">О Дике Членсе</h3>
-                <img id="mypic" 
+                <img 
                     src="https://andreyphotos.s3.eu-north-1.amazonaws.com/about+photo/IMG_7448w300.jpg"
                     srcSet="
                     https://andreyphotos.s3.eu-north-1.amazonaws.com/about+photo/IMG_7448w300.jpg 300w,
