@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "aaabe0e65f2c2300edb58a93f7e1fbe5",
+    "revision": "b32bbd7da7c1920947b26b1cfd7b6893",
     "url": "/AndreyMelnikovPhoto/index.html"
   },
   {
-    "revision": "1d79d7354798533e840d",
+    "revision": "ca41c86158b758663513",
     "url": "/AndreyMelnikovPhoto/static/css/main.372a28ee.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/AndreyMelnikovPhoto/static/js/2.be0fe5fc.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1d79d7354798533e840d",
-    "url": "/AndreyMelnikovPhoto/static/js/main.78039352.chunk.js"
+    "revision": "ca41c86158b758663513",
+    "url": "/AndreyMelnikovPhoto/static/js/main.8a744dfb.chunk.js"
   },
   {
     "revision": "9e568650adf0d9044884",
