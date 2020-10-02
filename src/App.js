@@ -5,18 +5,23 @@ import Navigation from './components/Navigation'
 import { BrowserRouter as Router, HashRouter, Route } from 'react-router-dom'
 import gsap, {Power1} from 'gsap'
 import About from './components/About'
-import SimpleReactLightbox from "simple-react-lightbox";
+import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox";
 import Architecture from './components/Architecture';
+import ArchitectureData from './components/ArchitectureData'
+
 function App() {
 
   const [sidebar, setSidebar] = useState(false)
   const [animationPlayed, setAnimationPlayed] = useState(false)
   const [nameShown, setNameshown] = useState(false)
-
   const showSidebar = () => setSidebar(!sidebar)
   const toggleAnimation  = () => setAnimationPlayed(!animationPlayed)
   const showName = () => setNameshown(!nameShown)
+
   let name = useRef(null)
+
+  const archPhotos = ArchitectureData.map(pic => <Architecture
+    full={pic.full} />)
   
   useEffect(() =>  {
 
@@ -25,6 +30,9 @@ function App() {
       showName()
     }
   }, [nameShown])
+
+
+
   return (
     <HashRouter> 
     <SimpleReactLightbox>
@@ -51,13 +59,21 @@ function App() {
       <main> 
         <Navigation sidebar={sidebar}
         showSidebar={showSidebar}/>
-
+      
         <Route path="/" exact>
-          <Gallery 
-          animationPlayed={animationPlayed}
-          toggleAnimation={toggleAnimation}/>
+            <Gallery 
+            animationPlayed={animationPlayed}
+            toggleAnimation={toggleAnimation}/>
+          </Route>
+
+        <Route path="/architecture" exact component={Architecture}>
+          <SRLWrapper>
+          <div className="gallery">
+            {archPhotos}
+          </div>
+          </SRLWrapper>
+          
         </Route>
-        <Route path="/architecture" exact component={Architecture} />
         <Route path="/about" exact component={About} />
     
         <footer>

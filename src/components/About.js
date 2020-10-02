@@ -4,8 +4,6 @@ function About() {
     return(
         <div className="about"> 
             <h3 id="about-title">О Дике Членсе</h3>
-      
-                
                 <img id="mypic"
                     src="https://andreyphotos.s3.eu-north-1.amazonaws.com/about+photo/IMG_7448w300.jpg"
                     srcSet="
