@@ -5,9 +5,10 @@ import Navigation from './components/Navigation'
 import { BrowserRouter as Router, HashRouter, Route } from 'react-router-dom'
 import gsap, {Power1} from 'gsap'
 import About from './components/About'
-import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox";
-import Architecture from './components/Architecture';
+import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox"
+import Architecture from './components/Architecture'
 import ArchitectureData from './components/ArchitectureData'
+import Contact from './components/Contact'
 
 function App() {
 
@@ -75,6 +76,9 @@ function App() {
           
         </Route>
         <Route path="/about" exact component={About} />
+
+        
+        <Route path="/contact" exact component={Contact} />
     
         <footer>
           <p className="copyright"> All Images © Andrey Melnikov 2020</p>
