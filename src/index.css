@@ -157,6 +157,9 @@ img{
   grid-template-rows: 1fr 1fr 1fr;
   margin-bottom: 3em;
 }
+.contact-block >a:hover{ 
+  cursor: pointer;
+}
 .social > a{
   padding: 10px;
   margin-right: 2vw;
@@ -164,6 +167,11 @@ img{
 p > span{
   color :rgb(104, 44, 158);
   font-size: 20px;
+}
+.contact-block > a{
+  color :rgb(104, 44, 158);
+  display: block;
+  align-self: center;
 }
 .contact-block > p{
   font-weight: 500;

@@ -7,8 +7,8 @@ function Contact() {
             <h4>Контакная информация</h4>
             <div className="contact-block">
                 <p>Город:</p> <p><span>Москва</span></p>
-                <p>Телефон:</p> <p> <span>+7 (916) 280-19-23</span></p>
-                <p>Email:</p> <p><span>melnikov.v.andrei@gmail.com</span></p>
+                <p>Телефон:</p> <a href="tel:+7-916-280-19-23"> <span>+7 (916) 280-19-23</span></a>
+                <p>Email:</p> <a href="mailto:melnikov.v.andrei@gmail.com"><span>melnikov.v.andrei@gmail.com</span></a>
             </div>
             <h4>Социальные сети</h4>
             <div className="social">
