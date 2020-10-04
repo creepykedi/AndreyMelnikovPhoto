@@ -55,6 +55,7 @@ return(
         <div className="pic">
             <img src="https://preview.redd.it/3gwagimeswj51.jpg?width=640&crop=smart&auto=webp&s=db2a33086a502d1a9872bc6cb50d20b1171decd8"></img>
         </div>
+        
 
     </div>
     </SRLWrapper>
