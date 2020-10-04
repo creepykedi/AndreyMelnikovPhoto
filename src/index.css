@@ -131,6 +131,7 @@ h4{
   font-size: 18px;
   font-family: 'Prata', serif;
   margin-bottom: 2em;
+  color: #6b5656;
 }
 p{
   color: #424242;
@@ -280,6 +281,9 @@ ul.sidebar{
     #mypic{
       width: 21em;
     }
+    .contact-info{
+      margin-left: 3em;
+    }
   }
   @media screen and (aspect-ratio: 1280/800 ){
     .gallery{
@@ -293,6 +297,18 @@ ul.sidebar{
     padding: 0.25em;
     grid-row-gap: 4px;
     grid-column-gap: 4px;
+  }
+  .social > a{
+    margin-right: 2em;
+  }
+  .contact-info{
+    margin-left: 1em;
+    font-size: 16px;
+    overflow-wrap: anywhere;
+  }
+  .contact-block{
+    grid-template-columns: 7em 1fr;
+    margin-right: 1em;
   }
   .mobname{
     display: inline;
