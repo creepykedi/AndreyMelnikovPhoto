@@ -1,5 +1,4 @@
 import React from 'react'
-import 'youtube.svg'
 
 function Contact() {
     return(

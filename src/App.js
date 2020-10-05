@@ -9,6 +9,8 @@ import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox"
 import Architecture from './components/Architecture'
 import ArchitectureData from './components/ArchitectureData'
 import Contact from './components/Contact'
+import Rep from './components/Rep'
+
 
 function App() {
 
@@ -76,8 +78,9 @@ function App() {
           
         </Route>
         <Route path="/about" exact component={About} />
-
-        
+        <div className="gallery">
+           <Route path="/reportage" component={Rep}/>
+        </div>
         <Route path="/contact" exact component={Contact} />
     
         <footer>
