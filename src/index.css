@@ -87,7 +87,9 @@ nav > ul > li :hover{
   color: white;
   cursor: pointer;
 }
-
+nav > ul > li :focus{
+  text-decoration: underline;
+}
 .pic-6{
   grid-column: 2/4;
 }

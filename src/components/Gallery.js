@@ -23,7 +23,7 @@ let tl = new TimelineLite()
 }, [props.animationPlayed])
   
 return(     
-    <SRLWrapper>
+    <SRLWrapper options={props.options}>
     <div className="gallery">
 
         <div className="pic">

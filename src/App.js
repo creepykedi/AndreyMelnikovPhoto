@@ -20,6 +20,10 @@ function App() {
   const showSidebar = () => setSidebar(!sidebar)
   const toggleAnimation  = () => setAnimationPlayed(!animationPlayed)
   const showName = () => setNameshown(!nameShown)
+  const options = {
+    buttons: {
+      showDownloadButton: false
+    }}
 
   let name = useRef(null)
 
@@ -66,11 +70,12 @@ function App() {
         <Route path="/" exact>
             <Gallery 
             animationPlayed={animationPlayed}
-            toggleAnimation={toggleAnimation}/>
+            toggleAnimation={toggleAnimation}
+            options={options}/>
           </Route>
 
         <Route path="/architecture" exact component={Architecture}>
-          <SRLWrapper>
+          <SRLWrapper options={options}>
           <div className="gallery">
             {archPhotos}
           </div>
@@ -80,8 +85,7 @@ function App() {
         <Route path="/about" exact component={About} />
         
         <Route path="/reportage" component={Rep}>
-            <div className="gallery">
-            </div>
+     
         </Route>
         
         <Route path="/contact" exact component={Contact} />
