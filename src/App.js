@@ -78,9 +78,12 @@ function App() {
           
         </Route>
         <Route path="/about" exact component={About} />
-        <div className="gallery">
-           <Route path="/reportage" component={Rep}/>
-        </div>
+        
+        <Route path="/reportage" component={Rep}>
+            <div className="gallery">
+            </div>
+        </Route>
+        
         <Route path="/contact" exact component={Contact} />
     
         <footer>
