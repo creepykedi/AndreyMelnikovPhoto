@@ -13,8 +13,18 @@ function Rep() {
             </div>  
             <div className="pic" >
                 <picture>
-                    <source srcset="https://storage.yandexcloud.net/am-photo/hires/IMG_5728w300.webp" type="image/webp" media="(max-width: 720px)"/>
-                    <source srcset="https://storage.yandexcloud.net/am-photo/hires/IMG_5728w600.webp" type="image/webp" media="(max-width: 1900px)"/>
+                    <source media="(max-width: 500px) and (max-resolution: 150dpi)" srcset="
+                    https://storage.yandexcloud.net/am-photo/hires/IMG_5728w300.webp" 
+                    type="image/webp" 
+                    />
+                    <source media="(max-width: 500px) and (min-resolution: 150dpi)" srcset="
+                    https://storage.yandexcloud.net/am-photo/hires/IMG_5728w600.webp" 
+                    type="image/webp" 
+                    />
+                    <source media="(min-width: 500px) and (max-width: 1900px)"
+                     srcset="https://storage.yandexcloud.net/am-photo/hires/IMG_5728w600.webp "
+                     type="image/webp"/>
+
                     <source srcset="https://storage.yandexcloud.net/am-photo/hires/IMG_5728w1200.webp" type="image/webp"/>
                     <img srcset="https://storage.yandexcloud.net/am-photo/hires/IMG_5728.jpg" alt="pic"/>
                 </picture>
