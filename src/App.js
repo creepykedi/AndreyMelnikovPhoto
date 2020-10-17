@@ -126,15 +126,15 @@ function App() {
 
         <Route path="/reportage" exact component={Rep}>
           <SRLWrapper options={options}>
-          <div className="gallery gallery">
+          <div className="gallery">
             {repPhotos}
           </div>
           </SRLWrapper>
         </Route>
 
-        <Route path="/portraits" exact component={Rep}>
+        <Route path="/portraits" component={Rep}>
           <SRLWrapper options={options}>
-          <div className="gallery gallery">
+          <div className="gallery">
             {portraitsPhotos}
           </div>
           </SRLWrapper>
