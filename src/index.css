@@ -283,13 +283,13 @@ ul.sidebar{
   }
     nav{
       position: fixed;
-      left: 3vw;
+      left: 2.5vw;
     }
     main {
       grid-template-columns: minmax(100px, 20%) 1fr;
     }
     li > a {
-      font-size: 16px;
+      font-size: 14px;
     }
     #mypic{
       width: 21em;

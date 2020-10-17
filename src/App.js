@@ -10,6 +10,7 @@ import Architecture from './components/Architecture'
 import Contact from './components/Contact'
 import Rep from './components/Rep'
 import Nature from './components/Nature'
+import Portraits from './components/Portraits'
 
 import ArchitectureData from './components/Data/ArchitectureData'
 import AllData from './components/Data/Alldata'
@@ -53,14 +54,14 @@ function App() {
       fallback={pic.fallback}
       wide={pic.wide} />)
 
-  const naturePhotos = NatData.map(pic => <Rep
+  const naturePhotos = NatData.map(pic => <Nature
     w600={pic.small}
     w900={pic.mid}
     w1200={pic.full}
     fallback={pic.fallback}
     wide={pic.wide} />)
 
-  const portraitsPhotos = PortraitsData.map(pic => <Rep
+  const portraitsPhotos = PortraitsData.map(pic => <Portraits
     w600={pic.small}
     w900={pic.mid}
     w1200={pic.full}
@@ -112,6 +113,7 @@ function App() {
             options={options}/>
           </Route>
 
+        
         <Route path="/architecture" exact component={Architecture}>
           <SRLWrapper options={options}>
           <div className="gallery">
@@ -129,20 +131,21 @@ function App() {
         </Route>
 
         <Route path="/reportage" exact component={Rep}>
-          <SRLWrapper options={options}>
+        <SRLWrapper options={options}>
           <div className="gallery">
             {repPhotos}
           </div>
           </SRLWrapper>
         </Route>
 
-        <Route path="/portraits" component={Rep}>
-          <SRLWrapper options={options}>
+        <Route path="/portraits" component={Portraits}>
+        <SRLWrapper options={options}>
           <div className="gallery">
             {portraitsPhotos}
           </div>
           </SRLWrapper>
         </Route>
+        
         <Route path="/about" exact component={About} />
         <Route path="/contact" exact component={Contact} />
     
