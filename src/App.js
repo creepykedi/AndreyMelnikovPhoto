@@ -33,8 +33,12 @@ function App() {
 
   let name = useRef(null)
 
-  const archPhotos = ArchitectureData.map(pic => <Architecture
-    full={pic.full} />)
+  const archPhotos = ArchitectureData.map(pic => <Rep
+    w600={pic.small}
+    w900={pic.mid}
+    w1200={pic.full}
+    fallback={pic.fallback}
+    wide={pic.wide} />)
 
   const allPhotos = AllData.map(pic => <Nature
     w600={pic.mid}

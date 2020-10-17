@@ -45,14 +45,14 @@ const NatData= [
         "full": "https://storage.yandexcloud.net/am-photo/nature/IMG_1309.webp",
         "mid": "https://storage.yandexcloud.net/am-photo/nature/IMG_1309w900.webp",
         "small": "https://storage.yandexcloud.net/am-photo/nature/IMG_1309w600.webp",
-        "fallback": "https://storage.yandexcloud.net/am-photo/nature/IMG_1309.JPG",
+        "fallback": "https://storage.yandexcloud.net/am-photo/nature/IMG_1309.jpg",
         "wide": ""
       },
       {
         "full": "https://storage.yandexcloud.net/am-photo/nature/IMG_1491.webp",
         "mid": "https://storage.yandexcloud.net/am-photo/nature/IMG_1491w900.webp",
         "small": "https://storage.yandexcloud.net/am-photo/nature/IMG_1491w600.webp",
-        "fallback": "https://storage.yandexcloud.net/am-photo/nature/IMG_1491.JPG",
+        "fallback": "https://storage.yandexcloud.net/am-photo/nature/IMG_1491.jpg",
         "wide": ""
       },
       {
@@ -66,14 +66,14 @@ const NatData= [
         "full": "https://storage.yandexcloud.net/am-photo/nature/IMG_4347.webp",
         "mid": "https://storage.yandexcloud.net/am-photo/nature/IMG_4347w900.webp",
         "small": "https://storage.yandexcloud.net/am-photo/nature/IMG_4347w600.webp",
-        "fallback": "https://storage.yandexcloud.net/am-photo/nature/IMG_4347.JPG",
+        "fallback": "https://storage.yandexcloud.net/am-photo/nature/IMG_4347.jpg",
         "wide": ""
       },
       {
         "full": "https://storage.yandexcloud.net/am-photo/nature/IMG_4938.webp",
         "mid": "https://storage.yandexcloud.net/am-photo/nature/IMG_4938w900.webp",
         "small": "https://storage.yandexcloud.net/am-photo/nature/IMG_4938w600.webp",
-        "fallback": "https://storage.yandexcloud.net/am-photo/nature/IMG_4938.JPG",
+        "fallback": "https://storage.yandexcloud.net/am-photo/nature/IMG_4938.jpg",
         "wide": ""
       },
       {
