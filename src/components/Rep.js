@@ -2,39 +2,28 @@ import React from 'react'
 import { SRLWrapper } from 'simple-react-lightbox'
 
 
-function Rep() {
+function Rep(props) {
     return(
-        <div className="gallery">
-            <div className="pic" >
-            
-                    <img srcset="https://storage.yandexcloud.net/am-photo/DJI_0014.webp 1200w,
-                https://moodboardbucket.s3.amazonaws.com/static/moodboard/images/q1n9f3x3k5d31_ombAZuZ.jpg 750w,
-                https://preview.redd.it/aqa1lhk2ybk51.jpg?width=640&crop=smart&auto=webp&s=60bb247123c49e99f891072f3a7960b490bd6973 1200w" alt="main"/>           
-            </div>  
-            <div className="pic" >
-                <picture>
-                    <source media="(max-width: 500px) and (max-resolution: 150dpi)" srcset="
-                    https://storage.yandexcloud.net/am-photo/hires/IMG_5728w300.webp" 
-                    type="image/webp" 
-                    />
-                    <source media="(max-width: 500px) and (min-resolution: 150dpi)" srcset="
-                    https://storage.yandexcloud.net/am-photo/hires/IMG_5728w600.webp" 
-                    type="image/webp" 
-                    />
-                    <source media="(min-width: 500px) and (max-width: 1900px)"
-                     srcset="https://storage.yandexcloud.net/am-photo/hires/IMG_5728w600.webp "
-                     type="image/webp"/>
-
-                    <source srcset="https://storage.yandexcloud.net/am-photo/hires/IMG_5728w1200.webp" type="image/webp"/>
-                    <img srcset="https://storage.yandexcloud.net/am-photo/hires/IMG_5728.jpg" alt="pic"/>
-                </picture>
-            </div>
-                
-                
-            </div>
-           
-
-    )
-}
+        <div className={!props.wide? "pic" : "pic pic-6"}>
+            <picture>
+            <source media="(max-width: 600px)  and (max-resolution: 200dpi)" srcset={props.w600}
+                type="image/webp" 
+                />
+                <source media="(max-width: 900px) and (max-resolution: 200dpi)" srcset={props.w900}
+                type="image/webp" 
+                />
+                <source media="(max-width: 900px) and (min-resolution: 200dpi)" srcset={props.w900}
+                type="image/webp" 
+                />
+                <source media="(max-width: 1200px)" srcset={props.w600}
+                type="image/webp" 
+                />
+                <source media="(min-width: 1200px)" srcset={props.w1200}
+                type="image/webp" 
+                />
+                <img srcset={props.fallback}/>
+            </picture>
+    </div>
+    )}
 
 export default Rep

@@ -1,6 +1,6 @@
 import React from "react"
 import {Link, Route} from 'react-router-dom'
-import SidebarData from './SidebarData'
+import SidebarData from './Data/SidebarData'
 
 
 function Navigation(props) {
@@ -13,6 +13,7 @@ function Navigation(props) {
               <li> <Link to={'/nature'} >ПРИРОДА</Link></li>
               <li><Link to={'/reportage'} >РЕПОРТАЖИ</Link></li>
               <li><Link to={'/architecture'} >АРХИТЕКТУРА</Link></li>
+              <li><Link to={'/portraits'} >ПОРТРЕТЫ</Link></li>
               <li className="firefix"><Link to={'/about'}>ОБО МНЕ</Link></li>
               <li><Link to={'/contact'} >СВЯЗАТЬСЯ</Link></li>
           </ul>

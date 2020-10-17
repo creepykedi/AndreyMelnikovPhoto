@@ -7,10 +7,15 @@ import gsap, {Power1} from 'gsap'
 import About from './components/About'
 import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox"
 import Architecture from './components/Architecture'
-import ArchitectureData from './components/ArchitectureData'
 import Contact from './components/Contact'
 import Rep from './components/Rep'
+import Nature from './components/Nature'
 
+import ArchitectureData from './components/Data/ArchitectureData'
+import AllData from './components/Data/Alldata'
+import NatData from './components/Data/NatureData'
+import RepData from './components/Data/RepData'
+import PortraitsData from './components/Data/PortraitsData'
 
 function App() {
 
@@ -22,14 +27,43 @@ function App() {
   const showName = () => setNameshown(!nameShown)
   const options = {
     buttons: {
-      showDownloadButton: false
+      showDownloadButton: false,
+      size: '60px'
     }}
 
   let name = useRef(null)
 
   const archPhotos = ArchitectureData.map(pic => <Architecture
     full={pic.full} />)
-  
+
+  const allPhotos = AllData.map(pic => <Nature
+    w600={pic.mid}
+    w1200={pic.full}
+    fallback={pic.throwback}
+    wide={pic.wide} />)
+
+  const repPhotos = RepData.map(pic => <Rep
+      w600={pic.small}
+      w900={pic.mid}
+      w1200={pic.full}
+      fallback={pic.fallback}
+      wide={pic.wide} />)
+
+  const naturePhotos = NatData.map(pic => <Rep
+    w600={pic.small}
+    w900={pic.mid}
+    w1200={pic.full}
+    fallback={pic.fallback}
+    wide={pic.wide} />)
+
+  const portraitsPhotos = PortraitsData.map(pic => <Rep
+    w600={pic.small}
+    w900={pic.mid}
+    w1200={pic.full}
+    fallback={pic.fallback}
+    wide={pic.wide} />)
+      
+
   useEffect(() =>  {
 
     if (!nameShown) {
@@ -80,14 +114,32 @@ function App() {
             {archPhotos}
           </div>
           </SRLWrapper>
-          
+        </Route>
+
+        <Route path="/nature" exact component={Nature}>
+          <SRLWrapper options={options}>
+          <div className="gallery">
+            {naturePhotos}
+          </div>
+          </SRLWrapper>
+        </Route>
+
+        <Route path="/reportage" exact component={Rep}>
+          <SRLWrapper options={options}>
+          <div className="gallery gallery">
+            {repPhotos}
+          </div>
+          </SRLWrapper>
+        </Route>
+
+        <Route path="/portraits" exact component={Rep}>
+          <SRLWrapper options={options}>
+          <div className="gallery gallery">
+            {portraitsPhotos}
+          </div>
+          </SRLWrapper>
         </Route>
         <Route path="/about" exact component={About} />
-        
-        <Route path="/reportage" component={Rep}>
-     
-        </Route>
-        
         <Route path="/contact" exact component={Contact} />
     
         <footer>

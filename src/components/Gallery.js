@@ -25,7 +25,6 @@ let tl = new TimelineLite()
 return(     
     <SRLWrapper options={props.options}>
     <div className="gallery">
-
         <div className="pic">
             <img src="https://moodboardbucket.s3.amazonaws.com/static/moodboard/images/0vszwr6sivs01.jpg"/>
         </div>
