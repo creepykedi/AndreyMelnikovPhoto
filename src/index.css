@@ -241,6 +241,13 @@ ul.sidebar{
     max-width: 1400px;
     font-size: 22px;
   }
+  main{
+    grid-template-columns: minmax(50px, 15%) 1fr;
+  }
+  nav{
+    position: fixed;
+    left: 4vw;
+  }
 }
 @media screen and (max-width: 1900px) {
   .gallery{
@@ -283,13 +290,13 @@ ul.sidebar{
   }
     nav{
       position: fixed;
-      left: 2.5vw;
+      left: 1.5vw;
     }
     main {
       grid-template-columns: minmax(100px, 20%) 1fr;
     }
     li > a {
-      font-size: 14px;
+      font-size: 16px;
     }
     #mypic{
       width: 21em;
