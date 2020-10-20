@@ -2,7 +2,7 @@ import React, { useRef, useState, useEffect } from 'react';
 import './App.css';
 import Gallery from './components/Gallery';
 import Navigation from './components/Navigation'
-import { BrowserRouter as Router, HashRouter, Route } from 'react-router-dom'
+import { BrowserRouter as Router, HashRouter, BrowserRouter, Route } from 'react-router-dom'
 import gsap, {Power1} from 'gsap'
 import About from './components/About'
 import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox"
@@ -12,12 +12,14 @@ import Rep from './components/Rep'
 import Nature from './components/Nature'
 import Portraits from './components/Portraits'
 
+
 import ArchitectureData from './components/Data/ArchitectureData'
 import AllData from './components/Data/Alldata'
 import NatData from './components/Data/NatureData'
 import RepData from './components/Data/RepData'
 import PortraitsData from './components/Data/PortraitsData'
 
+import RepDataSrl from './components/Data/RepDataSRl'
 function App() {
 
   const [sidebar, setSidebar] = useState(false)
@@ -80,8 +82,8 @@ function App() {
 
 
   return (
-    <HashRouter> 
-   
+    <SimpleReactLightbox> 
+    <BrowserRouter> 
     <div className="App">
       <top>
           <div className="top-icons"> 
@@ -105,16 +107,13 @@ function App() {
       <main> 
         <Navigation sidebar={sidebar}
         showSidebar={showSidebar}/>
-      <SimpleReactLightbox> 
+      
         <Route path="/" exact>
             <Gallery 
             animationPlayed={animationPlayed}
             toggleAnimation={toggleAnimation}
             options={options}/>
           </Route>
-      </SimpleReactLightbox>
-
-      <SimpleReactLightbox>
         <Route path="/nature" exact component={Nature}>
           <SRLWrapper options={options}>
           <div className="gallery">
@@ -122,8 +121,8 @@ function App() {
           </div>
           </SRLWrapper>
         </Route>
-      </SimpleReactLightbox>
-      <SimpleReactLightbox>   
+
+        
         <Route path="/architecture" exact component={Architecture}>
           <SRLWrapper options={options}>
           <div className="gallery">
@@ -131,7 +130,6 @@ function App() {
           </div>
           </SRLWrapper> 
         </Route>
-        </SimpleReactLightbox>
 
         <Route path="/reportage" exact component={Rep}>
         <SRLWrapper options={options}>
@@ -158,7 +156,8 @@ function App() {
       </main>
     </div>
     
-    </HashRouter>
+      </BrowserRouter>
+    </SimpleReactLightbox> 
   );
 }
 
