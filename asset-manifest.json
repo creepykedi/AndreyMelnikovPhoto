@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/AndreyMelnikovPhoto/static/css/main.68eb82f0.chunk.css",
-    "main.js": "/AndreyMelnikovPhoto/static/js/main.806331b9.chunk.js",
-    "main.js.map": "/AndreyMelnikovPhoto/static/js/main.806331b9.chunk.js.map",
+    "main.js": "/AndreyMelnikovPhoto/static/js/main.4cc6ffbc.chunk.js",
+    "main.js.map": "/AndreyMelnikovPhoto/static/js/main.4cc6ffbc.chunk.js.map",
     "runtime-main.js": "/AndreyMelnikovPhoto/static/js/runtime-main.69a35708.js",
     "runtime-main.js.map": "/AndreyMelnikovPhoto/static/js/runtime-main.69a35708.js.map",
-    "static/js/2.3bb8d592.chunk.js": "/AndreyMelnikovPhoto/static/js/2.3bb8d592.chunk.js",
-    "static/js/2.3bb8d592.chunk.js.map": "/AndreyMelnikovPhoto/static/js/2.3bb8d592.chunk.js.map",
+    "static/js/2.af7641b0.chunk.js": "/AndreyMelnikovPhoto/static/js/2.af7641b0.chunk.js",
+    "static/js/2.af7641b0.chunk.js.map": "/AndreyMelnikovPhoto/static/js/2.af7641b0.chunk.js.map",
     "index.html": "/AndreyMelnikovPhoto/index.html",
-    "precache-manifest.e12d7ffa37c27e56488745b11d225d9c.js": "/AndreyMelnikovPhoto/precache-manifest.e12d7ffa37c27e56488745b11d225d9c.js",
+    "precache-manifest.ad62d4bafffd72bfc65a58647bc60e62.js": "/AndreyMelnikovPhoto/precache-manifest.ad62d4bafffd72bfc65a58647bc60e62.js",
     "service-worker.js": "/AndreyMelnikovPhoto/service-worker.js",
     "static/css/main.68eb82f0.chunk.css.map": "/AndreyMelnikovPhoto/static/css/main.68eb82f0.chunk.css.map",
-    "static/js/2.3bb8d592.chunk.js.LICENSE.txt": "/AndreyMelnikovPhoto/static/js/2.3bb8d592.chunk.js.LICENSE.txt"
+    "static/js/2.af7641b0.chunk.js.LICENSE.txt": "/AndreyMelnikovPhoto/static/js/2.af7641b0.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.69a35708.js",
-    "static/js/2.3bb8d592.chunk.js",
+    "static/js/2.af7641b0.chunk.js",
     "static/css/main.68eb82f0.chunk.css",
-    "static/js/main.806331b9.chunk.js"
+    "static/js/main.4cc6ffbc.chunk.js"
   ]
 }
