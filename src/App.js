@@ -57,7 +57,7 @@ function App() {
       wide={pic.wide} />)
 
   const naturePhotos = NatData.map(pic => <Nature
-    w600={pic.small}
+    w600={pic.mid}
     w900={pic.mid}
     w1200={pic.full}
     fallback={pic.fallback}
@@ -83,7 +83,7 @@ function App() {
 
   return (
     <SimpleReactLightbox> 
-    <BrowserRouter> 
+    <HashRouter> 
     <div className="App">
       <top>
           <div className="top-icons"> 
@@ -156,7 +156,7 @@ function App() {
       </main>
     </div>
     
-      </BrowserRouter>
+      </HashRouter>
     </SimpleReactLightbox> 
   );
 }
