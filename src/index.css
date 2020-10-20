@@ -54,6 +54,9 @@ main {
   margin-right: 1vw;
   grid-column: 2;
 }
+.gallery.portraits{
+  grid-template-rows: repeat(3,60vh);
+}
 .gallery-20{
   grid-template-rows: repeat(20, minmax(auto, 35vh));
 }

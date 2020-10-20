@@ -11,7 +11,8 @@ const NatData= [
         "mid": "https://storage.yandexcloud.net/am-photo/nature/DJI__final_2w900.webp",
         "small": "https://storage.yandexcloud.net/am-photo/nature/DJI__final_2w600.webp",
         "fallback": "https://storage.yandexcloud.net/am-photo/nature/DJI__final_2.jpg",
-        "wide": ""
+        "wide": "tall",
+        
       },
       {
         "full": "https://storage.yandexcloud.net/am-photo/nature/IMG_0808.webp",

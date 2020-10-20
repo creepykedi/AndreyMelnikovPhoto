@@ -235,7 +235,7 @@ const ArchitectureData =  [
       "mid": "https://storage.yandexcloud.net/am-photo/arch/PANO0021-Panow900.webp",
       "small": "https://storage.yandexcloud.net/am-photo/arch/PANO0021-Panow600.webp",
       "fallback": "https://storage.yandexcloud.net/am-photo/arch/PANO0021-Pano.jpg",
-      "wide": ""
+      "wide": "true"
     },
     {
       "full": "https://storage.yandexcloud.net/am-photo/arch/paths.webp",

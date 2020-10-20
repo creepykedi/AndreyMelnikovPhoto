@@ -62,7 +62,7 @@ function App() {
     wide={pic.wide} />)
 
   const portraitsPhotos = PortraitsData.map(pic => <Portraits
-    w600={pic.small}
+    w600={pic.mid}
     w900={pic.mid}
     w1200={pic.full}
     fallback={pic.fallback}
@@ -81,7 +81,7 @@ function App() {
 
   return (
     <HashRouter> 
-    <SimpleReactLightbox>
+   
     <div className="App">
       <top>
           <div className="top-icons"> 
@@ -105,23 +105,16 @@ function App() {
       <main> 
         <Navigation sidebar={sidebar}
         showSidebar={showSidebar}/>
-      
+      <SimpleReactLightbox> 
         <Route path="/" exact>
             <Gallery 
             animationPlayed={animationPlayed}
             toggleAnimation={toggleAnimation}
             options={options}/>
           </Route>
+      </SimpleReactLightbox>
 
-        
-        <Route path="/architecture" exact component={Architecture}>
-          <SRLWrapper options={options}>
-          <div className="gallery">
-            {archPhotos}
-          </div>
-          </SRLWrapper>
-        </Route>
-
+      <SimpleReactLightbox>
         <Route path="/nature" exact component={Nature}>
           <SRLWrapper options={options}>
           <div className="gallery">
@@ -129,6 +122,16 @@ function App() {
           </div>
           </SRLWrapper>
         </Route>
+      </SimpleReactLightbox>
+      <SimpleReactLightbox>   
+        <Route path="/architecture" exact component={Architecture}>
+          <SRLWrapper options={options}>
+          <div className="gallery">
+            {archPhotos}
+          </div>
+          </SRLWrapper> 
+        </Route>
+        </SimpleReactLightbox>
 
         <Route path="/reportage" exact component={Rep}>
         <SRLWrapper options={options}>
@@ -140,7 +143,7 @@ function App() {
 
         <Route path="/portraits" component={Portraits}>
         <SRLWrapper options={options}>
-          <div className="gallery">
+          <div className="gallery portraits">
             {portraitsPhotos}
           </div>
           </SRLWrapper>
@@ -154,7 +157,7 @@ function App() {
         </footer>
       </main>
     </div>
-    </SimpleReactLightbox>
+    
     </HashRouter>
   );
 }

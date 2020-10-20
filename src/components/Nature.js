@@ -4,7 +4,7 @@ import React from 'react';
 function Nature(props) {
     
 return(     
-       <div className={!props.wide? "pic" : "pic pic-6"}>
+       <div className={!props.wide ? "pic" : "pic pic-5"}>
             <picture>
                 <source media="(max-width: 900px) and (max-resolution: 200dpi)" srcset={props.w600}
                 type="image/webp" 
